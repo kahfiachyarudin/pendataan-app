@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="judul">Website Pendataan Barang</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Stok</th>
+                <th>Harga</th>
+                <th>Opsi</th>
+            </tr>
+        </thead>
+        <tbody id="list-barang"></tbody>
+    </table>
+
+    <!-- Tombol Tambah Barang -->
+    <button id="tambah">+</button>
+
+    <!-- Popup Input -->
+    <div id="popup">
+        <h1>Input Barang</h1>
+        <div class="input-area">
+            <input type="text" id="barang-input" placeholder="Nama Barang..." required>
+            <input type="number" id="stok-input" placeholder="Jumlah Stok..." required>
+            <input type="number" id="harga-input" placeholder="Harga Barang..." required>
+            <button id="add-btn">Tambah</button>
+        </div>
+    </div>
+
+    <!-- SweetAlert + Script Utama -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
